@@ -49,5 +49,5 @@ quadTree.clear();
 
 ## Remarks
 
-* field name "bound" for the item is mandatory and should be present. It's used by QuadNode to determine item boundaries.
+* field "bound" for the item is mandatory and should be present. It's used by QuadNode to determine item boundaries.
 * QuadNode will assign field "_quadNode" to the item. This field is reserved for internal QuadNode usage and should not be modified from user code.
