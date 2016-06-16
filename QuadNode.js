@@ -143,6 +143,31 @@ QuadNode.prototype.find = function (bound, callback) {
     }
 };
 
+QuadNode.prototype.any = function (bound, predicate) {
+    if (this.childNodes.length != 0) {
+        var quad = this.getQuad(bound);
+        if (quad != -1) {
+            if (this.childNodes[quad].any(bound, predicate))
+                return true;
+        } else {
+            for (var i = 0; i < this.childNodes.length; i++) {
+                var node = this.childNodes[i];
+                if (checkBoundIntersection(node.bound, bound))
+                    if (node.any(bound, predicate))
+                        return true;
+            }
+        }
+    }
+    for (var i = 0; i < this.items.length; i++) {
+        var item = this.items[i];
+        if (checkBoundIntersection(item.bound, bound)) {
+            if (predicate == null || predicate(item))
+                return true;
+        }
+    }
+    return false;
+};
+
 // Returns quadrant for the bound.
 // Returns -1 if bound cannot completely fit within a child node
 QuadNode.prototype.getQuad = function (bound) {
