@@ -31,6 +31,14 @@ quadTree.find(bound, function(item) {
 });
 ```
 
+Check if any item exists at specified bounds
+```
+var bound = { minx: 5, miny: 5, maxx: 8, maxy: 8 };
+if (quadTree.any(bound)) {
+    console.log("specified boundary contains some items");
+}
+```
+
 Update item
 ```
 item0.bound = { minx: 20, miny: 20, maxx: 25, maxy: 25 };
