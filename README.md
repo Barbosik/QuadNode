@@ -35,7 +35,7 @@ Check if any item exists in specified bounds
 ```
 var bound = { minx: 5, miny: 5, maxx: 8, maxy: 8 };
 if (quadTree.any(bound)) {
-    console.log("specified boundary contains some items");
+    console.log("specified boundary contains at least one item");
 }
 ```
 
@@ -43,7 +43,7 @@ Check if any item exists in specified bounds with item filter
 ```
 var bound = { minx: 5, miny: 5, maxx: 8, maxy: 8 };
 if (quadTree.any(bound, function(item) { return item.id==0; })) {
-    console.log("specified boundary contains some items");
+    console.log("specified boundary contains at least one item with id==0");
 }
 ```
 
