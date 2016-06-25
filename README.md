@@ -1,8 +1,9 @@
 # QuadNode
-Fast and easy Quad Tree implementation for node.js
 
 ![Language](https://img.shields.io/badge/language-node.js-yellow.svg)
 ![License](https://img.shields.io/badge/license-APACHE2-blue.svg)
+
+Fast and easy Quad Tree implementation for node.js
 
 
 ## Usage
