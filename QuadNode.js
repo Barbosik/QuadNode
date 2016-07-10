@@ -124,20 +124,8 @@ function cleanup (node) {
 };
 
 QuadNode.prototype.update = function (item) {
-    var node = item._quadNode;
-    if (node == null) {
-        throw new TypeError("QuadNode.update: item doesn't belong to quad-tree!");
-    }
-    var index = node.items.indexOf(item);
-    if (index < 0) {
-        throw new TypeError("QuadNode.update: item not found!");
-    }
-    node.items.splice(index, 1);
-    item._quadNode = null;
+    this.remove(item);
     this.insert(item);
-    if (node != item._quadNode) {
-        cleanup(node);
-    }
 };
 
 QuadNode.prototype.clear = function () {
