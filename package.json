@@ -1,6 +1,6 @@
 {
   "name": "quad-node",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Fast and easy quad-tree implementation for node.js",
   "main": "QuadNode.js",
   "scripts": {
