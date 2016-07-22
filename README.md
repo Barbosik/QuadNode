@@ -10,6 +10,9 @@ Simple and fast Quad Tree implementation written in node.js
 npm install quad-node
 ```
 
+Also, you can found the latest stable package here: https://www.npmjs.com/package/quad-node
+
+
 ## Usage
 
 ### Add reference:
