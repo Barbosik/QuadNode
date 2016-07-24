@@ -1,6 +1,8 @@
 ﻿# quad-node
 
 ![npm package](https://nodei.co/npm/quad-node.png?downloads=true&downloadRank=true&stars=true)
+<br />
+<br />
 ![Language](https://img.shields.io/badge/language-node.js-yellow.svg)
 ![License](https://img.shields.io/badge/license-APACHE2-blue.svg)
 
